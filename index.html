@@ -37,10 +37,54 @@
           <img src="images/user.jpg" alt="">
         </div>
         <div class="about-col-2">
-          <h1>About Me</h1>
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum repudiandae temporibus deserunt doloribus distinctio quisquam, nulla sed repellendus harum, sequi amet. Vero aspernatur cumque officia incidunt voluptate quis hic in.</p>
+
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>web App Development</li>
+              <li><span>App Development</span><br>Building Android/IOS Apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2021 - Current</span><br>Lorem ipsum dolor sit amet consectetur</li>
+              <li><span>2019 - 2021</span><br>Lorem ipsum dolor sit amet consectetur</li>
+              <li><span>2018 - 2019</span><br>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022 - Current</span><br>Student at SMK Negeri 1 Denpasar</li>
+              <li><span>2019 - 2022</span><br>Student at SMP Negeri 1 Selemadeg Timur</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+      for(tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <!-- about end -->
 </body>
 </html>
