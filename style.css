@@ -5,12 +5,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #080808;
   color: #fff;
 }
 
-/* header start */
+/* ------------------------------ header start ------------------------ */
 #header {
   width: 100%;
   height: 100vh;
@@ -74,9 +78,9 @@ nav ul li a:hover::after {
 .header-text h1 span{
   color: #ff004f;
 }
-/* header end */
+/* ------------------------------ header end -------------------------------- */
 
-/* about start */
+/* ------------------------------ about start -------------------------- */
 #about {
   padding: 80px 0;
   color: #ababab;
@@ -152,9 +156,9 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
-/* about end */
+/* ----------------------------- about end ------------------------- */
 
-/* services start */
+/* ----------------------------- services start -------------------- */
 #services {
   padding: 30px 0;
 }
@@ -198,9 +202,9 @@ nav ul li a:hover::after {
   background: #ff004f;
   transform: translateY(-10px);
 }
-/* services end */
+/* ------------------------ services end ------------------------------------ */
 
-/* portfolio start */
+/* ----------------------- portfolio start --------------------------------- */
 #portfolio {
   padding: 50px 0;
 }
@@ -285,3 +289,84 @@ nav ul li a:hover::after {
 .btn:hover {
   background: #ff004f;
 }
+/* ----------------------- portfolio end ------------------------------------ */
+
+/* ---------------------- contact start -------------------- */
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: #080808;
+  transition: background 0.5s;
+}
+
+.btn.btn2:hover {
+  background: #ff004f;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+/* --------------------- contact end --------------------- */
