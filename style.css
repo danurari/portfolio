@@ -69,6 +69,8 @@ nav ul li a:hover::after {
 .header-text {
   margin-top: 20%;
   font-size: 30px;
+  text-align: center;
+  margin-top: 15%;
 }
 
 .header-text h1 {
@@ -84,7 +86,8 @@ nav ul li a:hover::after {
 /* ------------------------------ about start -------------------------- */
 #about {
   padding: 80px 0;
-  color: #ababab;
+  color: #080808;
+  background-color: #fff;
 }
 
 .row {
@@ -104,6 +107,12 @@ nav ul li a:hover::after {
 
 .about-col-2 {
   flex-basis: 60%;
+}
+
+.about-col-2 .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #080808;
 }
 
 .sub-title {
@@ -162,6 +171,7 @@ nav ul li a:hover::after {
 /* ----------------------------- services start -------------------- */
 #services {
   padding: 30px 0;
+  color: #fff;
 }
 
 .services-list {
@@ -293,6 +303,15 @@ nav ul li a:hover::after {
 /* ----------------------- portfolio end ------------------------------------ */
 
 /* ---------------------- contact start -------------------- */
+#contact {
+  background-color: #fff;
+  color: #080808;
+}
+.contact-left .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #080808;
+}
 .contact-left {
   flex-basis: 35%;
 }
@@ -331,7 +350,8 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
   display: inline-block;
-  background: #080808;
+  background: #fff;
+  color: #080808;
   transition: background 0.5s;
 }
 
@@ -366,7 +386,7 @@ form .btn2 {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: #262626;
+  color: #080808;
   font-weight: 300;
   margin-top: 20px;
 }
