@@ -15,13 +15,15 @@
     <div class="container">
       <nav>
         <img src="images/logo.png" alt="" class="logo">
-        <ul>
+        <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       
       <div class="header-text">
@@ -41,8 +43,17 @@
     </div>
   </div>
     </div>
-  
   </div>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemeu.style.right="0";
+  }
+  function closemenu(){
+    sidemeu.style.right="-200px";
+  }
+  </script>
   <!-- ----------------------------------------------------- header end -------------------------------------- -->
 
   <!-- ----------------------------------------------------- about start --------------------------------- -->
@@ -70,9 +81,8 @@
           </div>
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>2021 - Current</span><br>Lorem ipsum dolor sit amet consectetur</li>
-              <li><span>2019 - 2021</span><br>Lorem ipsum dolor sit amet consectetur</li>
-              <li><span>2018 - 2019</span><br>Lorem ipsum dolor sit amet consectetur</li>
+              <li><span>2021 - 2021</span><br>Student council at SMPN 1 Seltim</li>
+              <li><span>2019 - 2021</span><br>Top 3 student at SMPN 1 Seltim</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
@@ -95,20 +105,14 @@
         <div>
           <i class="fa-solid fa-code"></i>
           <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam cumque, consequatur ipsam praesentium nulla facilis consequuntur officia iure dolorem repudiandae voluptas numquam non veritatis illo vero totam perferendis a? Quisquam!</p>
-          <a href="#">Learn More</a>
         </div>
         <div>
           <i class="fa-solid fa-crop"></i>
           <h2>UI/UX Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam cumque, consequatur ipsam praesentium nulla facilis consequuntur officia iure dolorem repudiandae voluptas numquam non veritatis illo vero totam perferendis a? Quisquam!</p>
-          <a href="#">Learn More</a>
         </div>
         <div>
           <i class="fa-brands fa-app-store"></i>
           <h2>App Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam cumque, consequatur ipsam praesentium nulla facilis consequuntur officia iure dolorem repudiandae voluptas numquam non veritatis illo vero totam perferendis a? Quisquam!</p>
-          <a href="#">Learn More</a>
         </div>
       </div>
     </div>
@@ -124,7 +128,7 @@
           <img src="images/work-1.png" alt="">
           <div class="layer">
             <h3>Social Media App</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>Social media platforms allow users to have conversations, share information and create content.</p>
             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
@@ -132,7 +136,7 @@
           <img src="images/work-2.png" alt="">
           <div class="layer">
             <h3>Music App</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>A mobile phone application that allows you to listen to music files stored in the phone's internal or external memory.</p>
             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
           </div>
         </div>
@@ -145,7 +149,6 @@
           </div>
         </div>
       </div>
-      <a href="#" class="btn">See more</a>
     </div>
   </div>
   <!-- ----------------------------- portfolio end ---------------------------- -->
